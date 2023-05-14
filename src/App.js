@@ -1,4 +1,6 @@
 import './App.css';
+import Header from './components/Header';
+import Form from './components/Form';
 import Parklist from './components/Parklist';
 import firebase from './firebase';
 import {getDatabase, ref, onValue}  from 'firebase/database';
@@ -9,21 +11,12 @@ function App() {
   
 
   return (
-    <div>
-
-      <h1>Ontario Parks Passports!</h1>
-      <Parklist />
-
-      {/* <ul className='parks' >
-        {parks.map(({ id, title }) => {
-          return (
-            <li>
-              <p>{title}</p>
-            </li>
-          )
-        })}
-      </ul> */}
-    </div>
+    <>
+    <Header />
+    <Form />
+    <Parklist />
+    
+    </>
   );
 }
 
