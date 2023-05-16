@@ -15,12 +15,20 @@ const Park = ({ id, title, location, activity }) => {
     }
 
     return (
-        <ul>
+        <li>
             <p>{title} Provincial Park in {location}, Ontario</p>
             <p>This park has the following:</p>
-            <li key={activity}></li>
+            <ul>
+                {
+                    activity.map((activityString, index) =>{
+                        return (
+                            <li key={index} >{activityString}</li>
+                        )
+                    })
+                }
+            </ul>
             <button onClick={ handleClick } >I have visited this park✅</button>
-        </ul>
+        </li>
     )
 }
 

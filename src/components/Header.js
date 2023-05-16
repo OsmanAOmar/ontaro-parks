@@ -3,7 +3,7 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Ontario Parks Passport</h1>
+            <h1>Toronto's 10 Closest Provincial Parks</h1>
         </header>
     )
 }

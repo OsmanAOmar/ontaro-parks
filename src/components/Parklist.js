@@ -1,6 +1,6 @@
 import firebase from "../firebase";
 import Park from "./Park";
-import Activity from "./Activity";
+// import Activity from "./Activity";
 import { onValue, getDatabase, ref } from "firebase/database";
 import { useState, useEffect } from "react";
 
@@ -29,11 +29,24 @@ const Parklist = () => {
 
       for (let key in dbObj){
 
+
+        const trueActivities = [];
+        const allActivities = dbObj[key].activities[0];
+
+        for (let activityName in allActivities){
+          if (allActivities[activityName] === true){
+            trueActivities.push(activityName);
+          }
+        }
+
+        console.log(dbObj[key].name, trueActivities)
+
         const parkObj = {
           id: key,
           title: dbObj[key].name,
           location: dbObj[key].location,
-          activity: dbObj[key].activities
+          activity: trueActivities
+          // activity: ["biking", "swimming", "dancing"]
         }
         arrayOfParks.push(parkObj)
       }
@@ -76,12 +89,13 @@ const Parklist = () => {
         <h2>Gorgeous list of parks</h2>
         <ul className="parklist">
             {
-                parklist.map(({id,title, location}) => {
+                parklist.map(({id,title, location, activity}) => {
                     return <Park
                                 key={id}
                                 title={title}
                                 id={id}
                                 location={location}
+                                activity={activity}
                     />
                 })
             }
