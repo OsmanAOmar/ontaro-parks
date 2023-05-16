@@ -3,7 +3,7 @@ import {get, getDatabase, ref, remove} from 'firebase/database';
 
 // destructure the title and id value from within the props object
 
-const Park = ({ id, title }) => {
+const Park = ({ id, title, location, activity }) => {
 
     // define an event handler which will use the unique park id to remove the park from the database
 
@@ -15,10 +15,12 @@ const Park = ({ id, title }) => {
     }
 
     return (
-        <li>
-            <p>{title}</p>
+        <ul>
+            <p>{title} Provincial Park in {location}, Ontario</p>
+            <p>This park has the following:</p>
+            <li key={activity}></li>
             <button onClick={ handleClick } >I have visited this park✅</button>
-        </li>
+        </ul>
     )
 }
 

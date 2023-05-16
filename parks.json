@@ -1,0 +1,794 @@
+{
+    "parks" : [
+        {
+            "parkId": 1,
+            "name": "Aaron",
+            "location": "Dryden",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": false,
+                    "boating": true,
+                    "canoeing": true,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": false,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": false,
+                    "snowmobiling": false,
+                    "snowshoeing": false,
+                    "swimming": true,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car camping": 91,
+                    "dog-free": 0,
+                    "electrical": 55,
+                    "group": 1,
+                    "radio-free": 0,
+                    "rv": 38,
+                    "seasonal": 42,
+                    "total": 91
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Aspen Trail",
+                            "distance": 2,
+                            "difficulty": "moderate",
+                            "type": null
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Eastern White Ceder Trail",
+                            "distance": 1.2,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        }
+                    ]
+        },
+        {
+            "parkId": 2,
+            "name": "Darlington",
+            "location": "Bowmanville",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": false,
+                    "boating": true,
+                    "canoeing": true,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": true,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": false,
+                    "hunting": true,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": true,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": true,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 321,
+                    "dog-free": 0,
+                    "electrical": 135,
+                    "group": 2,
+                    "radio-free": 12,
+                    "rv": 100,
+                    "seasonal": 5,
+                    "total": 323
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Burk Trail",
+                            "distance": 1.25,
+                            "difficulty": "moderate",
+                            "type": null
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "McLaughlin Bay Trail",
+                            "distance": 1.5,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Robinson Creek Trail",
+                            "distance": 1,
+                            "difficulty": "easy"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Waterfront Trail",
+                            "distance": 2.6,
+                            "difficulty": "easy"
+                        }
+                    ]
+        },
+        {
+            "parkId": 3,
+            "name": "Bronte Creek",
+            "location": "Oakville",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": false,
+                    "boating": false,
+                    "canoeing": false,
+                    "darksky": false,
+                    "discgolf": true,
+                    "discovery": true,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": false,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": true,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": false,
+                    "tobogganing": true,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 149,
+                    "dog-free": 0,
+                    "electrical": 145,
+                    "group": 0,
+                    "radio-free": 38,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 153
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Maiden's Blush Trail",
+                            "distance": 1,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Trillium Trail",
+                            "distance": 1,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Ravine Trail",
+                            "distance": 2.7,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Gateway Trail",
+                            "distance": 1.5,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 5,
+                            "trailName": "Halfmoon Valley Trail",
+                            "distance": 2,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        }
+                    ]
+        },
+        {
+            "parkId": 4,
+            "name": "Short Hills",
+            "location": "Dunnville",
+            "activities": [
+                {
+                    "biking":false,
+                    "mountainbiking": true,
+                    "boating": false,
+                    "canoeing": false,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": true,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": false,
+                    "snowmobiling": false,
+                    "snowshoeing": false,
+                    "swimming": false,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 0,
+                    "dog-free": 0,
+                    "electrical": 0,
+                    "group": 0,
+                    "radio-free": 0,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 0
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Swayze Falls Trail",
+                            "distance": 6.2,
+                            "difficulty": "difficult",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Black Walnut Trail",
+                            "distance": 4.3,
+                            "difficulty": "difficult",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Palaeozoic Path",
+                            "distance": 0.8,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Scarlet Tanager Trail",
+                            "distance": 2.3,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 5,
+                            "trailName": "Hemlock Valley Trail",
+                            "distance": 2.8,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 6,
+                            "trailName": "Terrace Creek Trail",
+                            "distance": 4.6,
+                            "difficulty": "difficult",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 7,
+                            "trailName": "Very Berry Trail",
+                            "distance": 2.6,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        }
+                    ]
+        },
+        {
+            "parkId": 5,
+            "name": "Forks of the Credit",
+            "location": "Alliston",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": false,
+                    "boating": false,
+                    "canoeing": false,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": true,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": true,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": false,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 0,
+                    "dog-free": 0,
+                    "electrical": 0,
+                    "group": 0,
+                    "radio-free": 0,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 0
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Bruce-Meadow-Dominion Trail",
+                            "distance": 8,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Forks of the Credit Trail",
+                            "distance": 11.9,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Cataract Falls Trail",
+                            "distance": 6.6,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Bruce Trail Loop",
+                            "distance": 7.7,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 5,
+                            "trailName": "Bruce Trail: Heritage Road to Heart Lake Road",
+                            "distance": 27.2,
+                            "difficulty": "moderate",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 6,
+                            "trailName": "Brimstone Side Trail",
+                            "distance": 8,
+                            "difficulty": "moderate",
+                            "type": "linear"
+                        }
+                    ]
+        },
+        {
+            "parkId": 6,
+            "name": "Sibbald Point",
+            "location": "Sutton West",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": false,
+                    "boating": true,
+                    "canoeing": true,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": true,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": false,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": true,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": true,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 577,
+                    "dog-free": 0,
+                    "electrical": 270,
+                    "group": 6,
+                    "radio-free": 285,
+                    "rv": 61,
+                    "seasonal": 0,
+                    "total": 583
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Maidenhair Fern Trail",
+                            "distance": 2,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Cultural History of Sibbald Point Provincial Park",
+                            "distance": 1,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        }
+                    ]
+        },
+        {
+            "parkId": 7,
+            "name": "Boyne Valley",
+            "location": "Shelburne",
+            "activities": [
+                {
+                    "biking":false,
+                    "mountainbiking": false,
+                    "boating": false,
+                    "canoeing": false,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": false,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": false,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": false,
+                    "snowmobiling": false,
+                    "snowshoeing": false,
+                    "swimming": false,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 0,
+                    "dog-free": 0,
+                    "electrical": 0,
+                    "group": 0,
+                    "radio-free": 0,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 0
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Bruce Trail: Boyne Valley Side Trail",
+                            "distance": 8.2,
+                            "difficulty": "moderate",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Murphy's Pinnacle Lookout",
+                            "distance": 1.6,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Bruce Trail: Boyne Valley",
+                            "distance": 18.8,
+                            "difficulty": "difficult",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Primrose Loop Trail",
+                            "distance": 8.2,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 5,
+                            "trailName": "Boyne Valley Provincial Park Loop",
+                            "distance": 16.6,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        }
+                    ]
+        },
+        {
+            "parkId": 8,
+            "name": "Mono Cliffs",
+            "location": "Alliston",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": true,
+                    "boating": false,
+                    "canoeing": false,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": false,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": true,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": true,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": false,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 0,
+                    "dog-free": 0,
+                    "electrical": 0,
+                    "group": 0,
+                    "radio-free": 0,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 0
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Cliff-Top Side Trail",
+                            "distance": 8,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Lookout Trail",
+                            "distance": 6.4,
+                            "difficulty": "moderate",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "McCarston's Trail",
+                            "distance": 9,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "South Outlier Trail",
+                            "distance": 5.3,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 5,
+                            "trailName": "Walter Tovell Trail",
+                            "distance": 11.1,
+                            "difficulty": "moderate",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 6,
+                            "trailName": "Spillway Trail",
+                            "distance": 5.8,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        }
+                    ]
+        },
+        {
+            "parkId": 9,
+            "name": "Earl Rowe",
+            "location": "Alliston",
+            "activities": [
+                {
+                    "biking":true,
+                    "mountainbiking": false,
+                    "boating": false,
+                    "canoeing": true,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": true,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": true,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": false,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": true,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 400,
+                    "dog-free": 0,
+                    "electrical": 163,
+                    "group": 3,
+                    "radio-free": 26,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 403
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Fletcher's Mill Pond Trail",
+                            "distance": 1.5,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Rainbow Run Trail",
+                            "distance": 11,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Little Trail",
+                            "distance": 0.5,
+                            "difficulty": "easy",
+                            "type": "linear"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Lookout Trail",
+                            "distance": 4,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 5,
+                            "trailName": "Resource Trail",
+                            "distance": 1.5,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        }
+                    ]
+        },
+        {
+            "parkId": 10,
+            "name": "Springwater",
+            "location": "Midhurst",
+            "activities": [
+                {
+                    "biking":false,
+                    "mountainbiking": false,
+                    "boating": false,
+                    "canoeing": false,
+                    "darksky": false,
+                    "discgolf": false,
+                    "discovery": false,
+                    "dogsledding": false,
+                    "fishing": false,
+                    "hiking": true,
+                    "night-hiking": false,
+                    "horseback": false,
+                    "hunting": false,
+                    "skating": false,
+                    "kite": false,
+                    "rockclimbing": false,
+                    "xcskiing": true,
+                    "snowmobiling": false,
+                    "snowshoeing": true,
+                    "swimming": false,
+                    "tobogganing": false,
+                    "rafting": false
+                }
+            ],
+            "camping": [
+                {
+                    "backcountry": 0,
+                    "car": 0,
+                    "dog-free": 0,
+                    "electrical": 0,
+                    "group": 0,
+                    "radio-free": 0,
+                    "rv": 0,
+                    "seasonal": 0,
+                    "total": 0
+                }
+            ],
+            "trails": [
+       
+                        {
+                            "trailNumber": 1,
+                            "trailName": "Springwater Provincial Park Loop Trail",
+                            "distance": 4.5,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 2,
+                            "trailName": "Green Trail",
+                            "distance": 2.3,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 3,
+                            "trailName": "Blue Trail",
+                            "distance": 2.1,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        },
+                        {
+                            "trailNumber": 4,
+                            "trailName": "Purple Trail",
+                            "distance": 2.1,
+                            "difficulty": "easy",
+                            "type": "loop"
+                        }
+                    ]
+        }
+    ]
+}

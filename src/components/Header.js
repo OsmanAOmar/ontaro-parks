@@ -1,5 +1,5 @@
 const Header = () => {
-    console.log('Header has rendered')
+    // console.log('Header has rendered')
 
     return (
         <header>
