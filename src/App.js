@@ -14,10 +14,7 @@ function App() {
   return (
     <>
     <Header />
-    {/* <Form /> */}
-    {/* <Activity /> */}
     <Parklist />
-    
     </>
   );
 }

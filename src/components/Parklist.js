@@ -1,6 +1,5 @@
 import firebase from "../firebase";
 import Park from "./Park";
-// import Activity from "./Activity";
 import { onValue, getDatabase, ref } from "firebase/database";
 import { useState, useEffect } from "react";
 
@@ -17,16 +16,14 @@ const Parklist = () => {
     console.log(filters)
     window.filters = filters
 
-    // add an event listener to that variable that will fire
+    
     // from the database, and call that data 'response'
 
     const arrayOfParks = [];
 
     onValue(dbRef,(response) => {
+
       // here we use Firebase's .val() method to parse our database info the way we want it
-      //   console.log(response.val().parks)
-
-
       const dbObj = response.val().parks;
 
       for (let key in dbObj){
@@ -43,8 +40,6 @@ const Parklist = () => {
           }
         }
 
-        //console.log(dbObj[key].name, trueActivities)
-
         const parkObj = {
           id: key,
           title: dbObj[key].name,
@@ -52,10 +47,6 @@ const Parklist = () => {
           activity: trueActivities
           // activity: ["biking", "swimming", "dancing"]
         }
-
-        // if(trueActivities.includes('discovery'))
-        
-        //
 
         let matchedFilteredActivity = true;
         for (const activity in filters) {
@@ -83,79 +74,83 @@ const Parklist = () => {
         //     arrayOfParks.push(parkObj)
         // }
 
-      }
-
-    //   ACTIVITIES
-      
-    //   console.log(arrayOfParks[0].activity)
-      
-    //   const parkActivity = arrayOfParks[0].activity
-
-    //   const arrayOfActivities = []
-
-    //   for (let key in parkActivity){
-
-    //     console.log(parkActivity[key])
-
-    //     for (let item in parkActivity[key] ){
-    //         console.log(parkActivity[key][item])
-    //         if (parkActivity[key][item] === true) {
-    //             arrayOfActivities.push(item)
-    //         }
-    //     }
-    //       console.log(arrayOfActivities)
-
-    //   }
-    //   End of activities
-    
-    
-    
+      }    
+  
       setParklist(arrayOfParks)
-
-      
+  
     });
 
   }, [filters]);
 
+  // add an event listener to that variable that will fire
   const toggle = (event) => {
-    const activity = event.target.id
 
+    const activity = event.target.id
     const newFilters = {...filters};
+
     newFilters[activity] = event.target.checked;
     setFilters(newFilters);
-    // setFilters({
-    //   ...filters,
-    //   ...{[activity]: event.target.checked}
-    // })
   }
 
 
   return (
     <section>
-        <h2>Choose your preferred activites</h2>
-        <fieldset>
-          Biking:<input type="checkbox" id="biking" onClick={toggle}/>
-          Boating:<input type="checkbox" id="boating" onClick={toggle}/>
-          Canoeing:<input type="checkbox" id="canoeing" onClick={toggle}/>
-          Dark Sky Preserves:<input type="checkbox" id="darksky" onClick={toggle}/>
-          Disc Golf:<input type="checkbox" id="discgolf" onClick={toggle}/>
-          Discovery Program:<input type="checkbox" id="discovery" onClick={toggle}/>
-          Dog Sledding:<input type="checkbox" id="dogsledding" onClick={toggle}/>
-          Fishing:<input type="checkbox" id="fishing" onClick={toggle}/>
-          Hiking:<input type="checkbox" id="hiking" onClick={toggle}/>
-          Overnight Hiking:<input type="checkbox" id="night-hiking" onClick={toggle}/>
-          Horseback Riding:<input type="checkbox" id="horseback" onClick={toggle}/>
-          Hunting:<input type="checkbox" id="hunting" onClick={toggle}/>
-          Kite Surfing:<input type="checkbox" id="kite" onClick={toggle}/>
-          Mountaing Biking:<input type="checkbox" id="mountainbiking" onClick={toggle}/>
-          Whitewater Rafting:<input type="checkbox" id="rafting" onClick={toggle}/>
-          Rock Climbing:<input type="checkbox" id="rockclimbing" onClick={toggle}/>
-          Ice Skating:<input type="checkbox" id="skating" onClick={toggle}/>
-          Snowmobiling:<input type="checkbox" id="snowmobiling" onClick={toggle}/>
-          Snowshoeing:<input type="checkbox" id="snowshoeing" onClick={toggle}/>
-          Swimming:<input type="checkbox" id="swimming" onClick={toggle}/>
-          Tobaggoning:<input type="checkbox" id="tobogganing" onClick={toggle}/>
-          Cross Country Skiing:<input type="checkbox" id="xcskiing" onClick={toggle}/>
+      <div className="wrapper">
+        <fieldset className="activityChoice" >
+          <legend>Choose your preferred activites</legend>
+          <div className="activityFlex">
+            <label htmlFor="biking">Biking</label><input type="checkbox" id="biking" onClick={toggle}/>
+
+            <label htmlFor="mountainbiking">Mountain Biking</label><input type="checkbox" id="mountainbiking" onClick={toggle}/>
+          
+            <label htmlFor="darksky">Dark Sky Preserves</label><input type="checkbox" id="darksky" onClick={toggle}/>
+            <label htmlFor="discgolf">Disc Golf</label><input type="checkbox" id="discgolf" onClick={toggle}/>
+
+            <label htmlFor="discovery">Discovery Program</label><input type="checkbox" id="discovery" onClick={toggle}/>
+
+            <label htmlFor="hiking">Hiking</label><input type="checkbox" id="hiking" onClick={toggle}/>
+
+            <label htmlFor="night-hiking">Overnight Hiking</label><input type="checkbox" id="night-hiking" onClick={toggle}/>
+
+            <label htmlFor="horseback">Horseback Riding</label><input type="checkbox" id="horseback" onClick={toggle}/>
+
+            <label htmlFor="hunting">Hunting</label><input type="checkbox" id="hunting" onClick={toggle}/>
+
+            <label htmlFor="rockclimbing">Rock Climbing</label><input type="checkbox" id="rockclimbing" onClick={toggle}/>
+          </div>
+        </fieldset>
+
+        <fieldset className="activityChoiceWater" >
+          <legend>Water-Based Activities</legend>
+          <div className="activityFlex">
+            <label htmlFor="swimming">Swimming</label><input type="checkbox" id="swimming" onClick={toggle}/>
+
+            <label htmlFor="fishing">Fishing</label><input type="checkbox" id="fishing" onClick={toggle}/>
+
+            <label htmlFor="boating">Boating</label><input type="checkbox" id="boating" onClick={toggle}/>
+
+            <label htmlFor="canoeing">Canoeing</label><input type="checkbox" id="canoeing" onClick={toggle}/>
+
+            <label htmlFor="rafting">Whitewater Rafting</label><input type="checkbox" id="rafting" onClick={toggle}/>
+
+            <label htmlFor="kite">Kite Surfing</label><input type="checkbox" id="kite" onClick={toggle}/>
+          </div>
+        </fieldset>
+
+        <fieldset className="activityChoiceWinter" >
+          <legend>Winter Activities</legend>
+          <div className="activityFlex">
+            <label htmlFor="dogsledding">Dog Sledding</label><input type="checkbox" id="dogsledding" onClick={toggle}/>
+            <label htmlFor="skating">Ice Skating</label><input type="checkbox" id="skating" onClick={toggle}/>
+
+            <label htmlFor="snowmobiling">Snowmobiling</label><input type="checkbox" id="snowmobiling" onClick={toggle}/>
+
+            <label htmlFor="snowshoeing">Snowshoeing</label><input type="checkbox" id="snowshoeing" onClick={toggle}/>
+
+            <label htmlFor="tobogganing">Tobaggoning</label><input type="checkbox" id="tobogganing" onClick={toggle}/>
+
+            <label htmlFor="xcskiing">Cross Country Skiing</label><input type="checkbox" id="xcskiing" onClick={toggle}/>
+          </div>
         </fieldset>
         <ul className="parklist">
             {
@@ -169,8 +164,8 @@ const Parklist = () => {
                     />
                 })
             }
-           
         </ul>
+      </div>
     </section>
   )
 }

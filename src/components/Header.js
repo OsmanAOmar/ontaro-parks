@@ -3,7 +3,9 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Toronto's 10 Closest Provincial Parks</h1>
+            <div className="wrapper">
+                <h1>Toronto's 10 Closest Provincial Parks</h1>
+            </div>
         </header>
     )
 }
