@@ -55,10 +55,33 @@ const Parklist = () => {
 
         // if(trueActivities.includes('discovery'))
         
-        if (Object.keys(filters)
-          .filter(filter => filters[filter])
-          .every(filter => allActivities[filter]))
-            arrayOfParks.push(parkObj)
+        //
+
+        let matchedFilteredActivity = true;
+        for (const activity in filters) {
+          // for example, if you want biking...
+          if (filters[activity] === true
+            // ...and the park doesn't have biking...
+            && allActivities[activity] === false) {
+              // ...do not display the park
+              matchedFilteredActivity = false;
+          }
+        }
+        if (matchedFilteredActivity === true) {
+          // if there is a match between checked activity and said activity in a park, display the park
+          arrayOfParks.push(parkObj);
+        }
+
+
+         // Object.keys returns an array of the keys (ie. discovery)
+        // .filter(key => filters[key]) is a function on the array that returns elements of the array where the condition function returns true
+        // filter function access the filters variable based controlled by the toggle function below
+        // .every takes the array of elements, runs a function on every key. If every case the condition function returns true, .every returns true.(ex. if biking and fishing were true, .every is true)
+        // if (Object.keys(filters)
+        //   .filter(key => filters[key])
+        //   .every(key => allActivities[key])) {
+        //     arrayOfParks.push(parkObj)
+        // }
 
       }
 
@@ -96,11 +119,14 @@ const Parklist = () => {
 
   const toggle = (event) => {
     const activity = event.target.id
-//    filters[activity] = !filters[activity]
-    setFilters({
-      ...filters,
-      ...{[activity]: !filters[activity]}
-    })
+
+    const newFilters = {...filters};
+    newFilters[activity] = event.target.checked;
+    setFilters(newFilters);
+    // setFilters({
+    //   ...filters,
+    //   ...{[activity]: event.target.checked}
+    // })
   }
 
 
@@ -108,6 +134,11 @@ const Parklist = () => {
     <section>
         <h2>Gorgeous list of parks</h2>
         discovery:<input type="checkbox" id="discovery" onClick={toggle}/>
+        biking:<input type="checkbox" id="biking" onClick={toggle}/>
+        hiking:<input type="checkbox" id="hiking" onClick={toggle}/>
+        Cross Country Skiing:<input type="checkbox" id="xcskiing" onClick={toggle}/>
+        Tobaggoning:<input type="checkbox" id="tobogganing" onClick={toggle}/>
+        Mountain Biking:<input type="checkbox" id="mountainbiking" onClick={toggle}/>
         <ul className="parklist">
             {
                 parklist.map(({id,title, location, activity}) => {
