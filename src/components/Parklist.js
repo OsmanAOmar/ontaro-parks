@@ -6,13 +6,16 @@ import { useState, useEffect } from "react";
 
 const Parklist = () => {
     
-    const [parklist, setParklist] = useState([]);
+  const [parklist, setParklist] = useState([]);
+  const [ filters, setFilters ] = useState({ discovery: false });
   
-    useEffect(() => {
+  useEffect(() => {
     // create  a variable that holds our database details
     const database = getDatabase(firebase)
     // create a variable that makes a reference to our database
     const dbRef = ref(database)
+    console.log(filters)
+    window.filters = filters
 
     // add an event listener to that variable that will fire
     // from the database, and call that data 'response'
@@ -20,9 +23,8 @@ const Parklist = () => {
     const arrayOfParks = [];
 
     onValue(dbRef,(response) => {
-
-    // here we use Firebase's .val() method to parse our database info the way we want it
-    //   console.log(response.val().parks)
+      // here we use Firebase's .val() method to parse our database info the way we want it
+      //   console.log(response.val().parks)
 
 
       const dbObj = response.val().parks;
@@ -35,11 +37,13 @@ const Parklist = () => {
 
         for (let activityName in allActivities){
           if (allActivities[activityName] === true){
+            activityName = activityName.replace('xcskiing', 'cross country skiing')
+            activityName = activityName.replace('mountainbiking', 'mountain biking')
             trueActivities.push(activityName);
           }
         }
 
-        console.log(dbObj[key].name, trueActivities)
+        //console.log(dbObj[key].name, trueActivities)
 
         const parkObj = {
           id: key,
@@ -48,7 +52,14 @@ const Parklist = () => {
           activity: trueActivities
           // activity: ["biking", "swimming", "dancing"]
         }
-        arrayOfParks.push(parkObj)
+
+        // if(trueActivities.includes('discovery'))
+        
+        if (Object.keys(filters)
+          .filter(filter => filters[filter])
+          .every(filter => allActivities[filter]))
+            arrayOfParks.push(parkObj)
+
       }
 
     //   ACTIVITIES
@@ -80,13 +91,23 @@ const Parklist = () => {
 
       
     });
-  }, []);
 
+  }, [filters]);
+
+  const toggle = (event) => {
+    const activity = event.target.id
+//    filters[activity] = !filters[activity]
+    setFilters({
+      ...filters,
+      ...{[activity]: !filters[activity]}
+    })
+  }
 
 
   return (
     <section>
         <h2>Gorgeous list of parks</h2>
+        discovery:<input type="checkbox" id="discovery" onClick={toggle}/>
         <ul className="parklist">
             {
                 parklist.map(({id,title, location, activity}) => {
