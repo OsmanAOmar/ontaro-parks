@@ -1,7 +1,12 @@
+header {
+  color: whitesmoke;
+}
+
 .activityChoice {
   border: 5px solid silver;
   margin: 0;
   padding: 1rem;
+  background-color: whitesmoke;
 }
 
 .activityChoice legend {
@@ -15,6 +20,7 @@
   border: 5px solid silver;
   margin: 0;
   padding: 1rem;
+  background-color: whitesmoke;
 }
 
 .activityChoiceWater legend {
@@ -28,7 +34,7 @@
   border: 5px solid silver;
   margin: 0;
   padding: 1rem;
-  /* border-radius:; */
+  background-color: whitesmoke;
 }
 
 .activityChoiceWinter legend {
@@ -49,10 +55,21 @@
   padding-right: .1rem;
 }
 
-.parkContainer {
-  border: 5px rgb(82, 232, 82) solid;
-  display: flex;
+.allParksContainer {
+  border: 5px silver solid;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 20px 5%;
+  background-color: whitesmoke;
 }
+
+.parkContainer {
+  padding-bottom: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .parkContainer ul {
   text-transform: capitalize;
@@ -60,4 +77,5 @@
 
 footer {
   text-align: center;
+  padding: .5rem;
 }

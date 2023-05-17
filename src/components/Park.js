@@ -1,7 +1,7 @@
 // destructure the title and id value from within the props object
 const Park = ({ id, title, location, activity }) => {
     return (
-        <section>
+        <section className="allParksContainer" >
             <div className="wrapper">
                 <div className="parkContainer">
                     <li className="parks" >
