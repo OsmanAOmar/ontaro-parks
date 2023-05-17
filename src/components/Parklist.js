@@ -132,13 +132,31 @@ const Parklist = () => {
 
   return (
     <section>
-        <h2>Gorgeous list of parks</h2>
-        discovery:<input type="checkbox" id="discovery" onClick={toggle}/>
-        biking:<input type="checkbox" id="biking" onClick={toggle}/>
-        hiking:<input type="checkbox" id="hiking" onClick={toggle}/>
-        Cross Country Skiing:<input type="checkbox" id="xcskiing" onClick={toggle}/>
-        Tobaggoning:<input type="checkbox" id="tobogganing" onClick={toggle}/>
-        Mountain Biking:<input type="checkbox" id="mountainbiking" onClick={toggle}/>
+        <h2>Choose your preferred activites</h2>
+        <fieldset>
+          Biking:<input type="checkbox" id="biking" onClick={toggle}/>
+          Boating:<input type="checkbox" id="boating" onClick={toggle}/>
+          Canoeing:<input type="checkbox" id="canoeing" onClick={toggle}/>
+          Dark Sky Preserves:<input type="checkbox" id="darksky" onClick={toggle}/>
+          Disc Golf:<input type="checkbox" id="discgolf" onClick={toggle}/>
+          Discovery Program:<input type="checkbox" id="discovery" onClick={toggle}/>
+          Dog Sledding:<input type="checkbox" id="dogsledding" onClick={toggle}/>
+          Fishing:<input type="checkbox" id="fishing" onClick={toggle}/>
+          Hiking:<input type="checkbox" id="hiking" onClick={toggle}/>
+          Overnight Hiking:<input type="checkbox" id="night-hiking" onClick={toggle}/>
+          Horseback Riding:<input type="checkbox" id="horseback" onClick={toggle}/>
+          Hunting:<input type="checkbox" id="hunting" onClick={toggle}/>
+          Kite Surfing:<input type="checkbox" id="kite" onClick={toggle}/>
+          Mountaing Biking:<input type="checkbox" id="mountainbiking" onClick={toggle}/>
+          Whitewater Rafting:<input type="checkbox" id="rafting" onClick={toggle}/>
+          Rock Climbing:<input type="checkbox" id="rockclimbing" onClick={toggle}/>
+          Ice Skating:<input type="checkbox" id="skating" onClick={toggle}/>
+          Snowmobiling:<input type="checkbox" id="snowmobiling" onClick={toggle}/>
+          Snowshoeing:<input type="checkbox" id="snowshoeing" onClick={toggle}/>
+          Swimming:<input type="checkbox" id="swimming" onClick={toggle}/>
+          Tobaggoning:<input type="checkbox" id="tobogganing" onClick={toggle}/>
+          Cross Country Skiing:<input type="checkbox" id="xcskiing" onClick={toggle}/>
+        </fieldset>
         <ul className="parklist">
             {
                 parklist.map(({id,title, location, activity}) => {
