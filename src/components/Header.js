@@ -1,10 +1,15 @@
+import { useEffect } from "react";
+
 const Header = () => {
-    // console.log('Header has rendered')
+
+    useEffect( () => {
+        document.title = "Ontario Parks";
+    }, [] );
 
     return (
         <header>
             <div className="wrapper">
-                <h1>Toronto's 10 Closest Provincial Parks</h1>
+                <h1>Toronto's Closest Provincial Parks</h1>
             </div>
         </header>
     )

@@ -13,11 +13,6 @@ const Parklist = () => {
     const database = getDatabase(firebase)
     // create a variable that makes a reference to our database
     const dbRef = ref(database)
-    console.log(filters)
-    window.filters = filters
-
-    
-    // from the database, and call that data 'response'
 
     const arrayOfParks = [];
 
@@ -34,8 +29,17 @@ const Parklist = () => {
 
         for (let activityName in allActivities){
           if (allActivities[activityName] === true){
+            // Change how data's wording is display for a better user experience
             activityName = activityName.replace('xcskiing', 'cross country skiing')
             activityName = activityName.replace('mountainbiking', 'mountain biking')
+            activityName = activityName.replace('darksky', 'dark sky preserve')
+            activityName = activityName.replace('discgolf', 'disc golf course')
+            activityName = activityName.replace('dogsledding', 'dog sledding')
+            activityName = activityName.replace('horseback', 'horseback riding')
+            activityName = activityName.replace('kite', 'kiteboarding')
+            activityName = activityName.replace('night-hiking', 'overnight hiking')
+            activityName = activityName.replace('skating', 'ice skating')
+
             trueActivities.push(activityName);
           }
         }
@@ -45,7 +49,7 @@ const Parklist = () => {
           title: dbObj[key].name,
           location: dbObj[key].location,
           activity: trueActivities
-          // activity: ["biking", "swimming", "dancing"]
+          // ex. activity: ["biking", "swimming", "dancing"]
         }
 
         let matchedFilteredActivity = true;
@@ -59,20 +63,20 @@ const Parklist = () => {
           }
         }
         if (matchedFilteredActivity === true) {
-          // if there is a match between checked activity and said activity in a park, display the park
+          // if there is a match between checked activity(toggle function) and said activity in a park, display the park
           arrayOfParks.push(parkObj);
         }
 
 
-         // Object.keys returns an array of the keys (ie. discovery)
-        // .filter(key => filters[key]) is a function on the array that returns elements of the array where the condition function returns true
-        // filter function access the filters variable based controlled by the toggle function below
-        // .every takes the array of elements, runs a function on every key. If every case the condition function returns true, .every returns true.(ex. if biking and fishing were true, .every is true)
-        // if (Object.keys(filters)
-        //   .filter(key => filters[key])
-        //   .every(key => allActivities[key])) {
-        //     arrayOfParks.push(parkObj)
-        // }
+         // ALTERNATIVE FILTERING METHOD: Object.keys returns an array of the keys (ie. discovery)
+          // .filter(key => filters[key]) is a function on the array that returns elements of the array where the condition function returns true
+          // filter function access the filters variable based controlled by the toggle function below
+          // .every takes the array of elements, runs a function on every key. If every case the condition function returns true, .every returns true.(ex. if biking and fishing were true, .every is true)
+          // if (Object.keys(filters)
+          //   .filter(key => filters[key])
+          //   .every(key => allActivities[key])) {
+          //     arrayOfParks.push(parkObj)
+          // }
 
       }    
   

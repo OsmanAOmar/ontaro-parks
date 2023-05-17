@@ -35,64 +35,7 @@ ul {
   margin: 0 auto;
 }
 
-.activityChoice {
-  border: 5px solid silver;
-  margin: 0;
-  padding: 1rem;
-}
 
-.activityChoice legend {
-  color: rgb(82, 232, 82);
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.activityChoiceWater {
-  border: 5px solid silver;
-  margin: 0;
-  padding: 1rem;
-}
-
-.activityChoiceWater legend {
-  color: cyan;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.activityChoiceWinter {
-  border: 5px solid silver;
-  margin: 0;
-  padding: 1rem;
-  /* border-radius:; */
-}
-
-.activityChoiceWinter legend {
-  color: rgb(214, 232, 245);
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.activityFlex {
-  display: inline-block;
-}
-
-.activityFlex label {
-  flex-wrap: wrap;
-  font-weight: 600;
-  padding-left: .75rem;
-  padding-right: .1rem;
-}
-
-.parkContainer {
-  border: 5px greenyellow dotted;
-}
-
-.parkContainer ul {
-  text-transform: capitalize;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

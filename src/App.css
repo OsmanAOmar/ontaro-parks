@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.activityChoice {
+  border: 5px solid silver;
+  margin: 0;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.activityChoice legend {
+  color: rgb(82, 232, 82);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.activityChoiceWater {
+  border: 5px solid silver;
+  margin: 0;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.activityChoiceWater legend {
+  color: cyan;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.activityChoiceWinter {
+  border: 5px solid silver;
+  margin: 0;
+  padding: 1rem;
+  /* border-radius:; */
+}
+
+.activityChoiceWinter legend {
+  color: rgb(214, 232, 245);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.activityFlex {
+  display: inline-block;
+}
+
+.activityFlex label {
+  flex-wrap: wrap;
+  font-weight: 600;
+  padding-left: .75rem;
+  padding-right: .1rem;
+}
+
+.parkContainer {
+  border: 5px rgb(82, 232, 82) solid;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.parkContainer ul {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  text-align: center;
 }

@@ -15,6 +15,7 @@ function App() {
     <>
     <Header />
     <Parklist />
+    <footer>Built by Osman Omar 2023</footer>
     </>
   );
 }
