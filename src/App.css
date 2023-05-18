@@ -95,7 +95,7 @@ header {
 
 .parkContainer ul {
   text-transform: capitalize;
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 footer {
