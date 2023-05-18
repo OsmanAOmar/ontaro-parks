@@ -101,7 +101,7 @@ const Parklist = () => {
     <section>
       <div className="wrapper">
         <fieldset className="activityChoice" >
-          <legend>Choose your preferred activites</legend>
+          <legend>Choose your preferred activities</legend>
           <div className="activityFlex">
             <label htmlFor="biking">Biking</label><input type="checkbox" id="biking" onClick={toggle}/>
 
