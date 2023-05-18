@@ -5,8 +5,8 @@ const Park = ({ id, title, location, activity }) => {
             <div className="wrapper">
                 <div className="parkContainer">
                     <li className="parks" >
-                        <p>{title} Provincial Park in {location}, Ontario</p>
-                        <p>This park has the following:</p>
+                        <h2>{title} Provincial Park in {location}, Ontario</h2>
+                        <h3>This park has the following:</h3>
                         <ul>
                             {
                                 activity.map((activityString, index) =>{

@@ -1,44 +1,63 @@
+body {
+  background-color: #778C48;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  color: whitesmoke;
+  color: #C7C415;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-family: 'Merienda', cursive;
+  font-size: 2rem;
 }
 
 .activityChoice {
-  border: 5px solid silver;
+  border: 5px solid #F0CD5A;
   margin: 0;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: #778C48;
+  color: #352346;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .activityChoice legend {
-  color: rgb(82, 232, 82);
+  font-family: 'Merienda', cursive;
+  color: #C7C415;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
 .activityChoiceWater {
-  border: 5px solid silver;
+  border: 5px solid #F0CD5A;
   margin: 0;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: #778C48;
+  color: #352346;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .activityChoiceWater legend {
-  color: cyan;
+  font-family: 'Merienda', cursive;
+  color: #C7C415;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
 .activityChoiceWinter {
-  border: 5px solid silver;
+  border: 5px solid #F0CD5A;
   margin: 0;
   padding: 1rem;
-  background-color: whitesmoke;
+  background-color: #778C48;
+  color: #352346;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .activityChoiceWinter legend {
-  color: rgb(214, 232, 245);
+  font-family: 'Merienda', cursive;
+  color: #C7C415;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   font-size: 1.5rem;
   font-weight: 800;
@@ -56,12 +75,15 @@ header {
 }
 
 .allParksContainer {
-  border: 5px silver solid;
+  border: 5px #F0CD5A solid;
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin: 20px 5%;
-  background-color: whitesmoke;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 20px 5%;
+  background-color: #778C48;
+  color: #352346;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:500;
 }
 
 .parkContainer {
@@ -73,9 +95,13 @@ header {
 
 .parkContainer ul {
   text-transform: capitalize;
+  list-style-type: disc;
 }
 
 footer {
+  background-color: #778C48;
+  color: #352346;
   text-align: center;
   padding: .5rem;
+  margin-top: auto;
 }
